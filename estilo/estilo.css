@@ -121,4 +121,11 @@ aside h3 {
     text-align: center;
 }
 
+#formulario {
+    margin: 50px;
+    font-family: 'Bebas Neue', cursive;
+    padding: 20px;
+    height: 60vh;
+    width: 80vw;
+}
 

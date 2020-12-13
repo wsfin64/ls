@@ -66,8 +66,8 @@
             <div id="tabela">
                 <h2>Motocicletas cadastradas</h2>
                 <div id="campo-busca">
-                    <label for="busca">Busca:</label>
-                    <input type="text" id="busca" name="busca">
+                    <label for="busca-filtro">Busca:</label>
+                    <input type="text" id="busca-filtro" name="busca">
                 </div>
                 <table>
                     <thead>
@@ -76,7 +76,7 @@
                             <th>Modelo</th>
                             <th>Ano</th>
                             <th>Cilindrada</th>
-                            <th>Valor</th>
+                            <th>Valor R$</th>
                         </tr>
                     </thead>
                     <tbody id="tabela-motocicletas">
@@ -85,7 +85,7 @@
                             <td class="info-modelo">MT-07</td>
                             <td class="info-ano">2019</td>
                             <td class="info-cilindrada">691</td>
-                            <td class="info-valor">R$ 29,590</td>
+                            <td class="info-valor">29,590</td>
                             <td class="remover">Remover</td>
                         </tr>
                         <tr class="motocicleta">
@@ -93,7 +93,7 @@
                             <td class="info-modelo">Street Triple</td>
                             <td class="info-ano">2018</td>
                             <td class="info-cilindrada">765</td>
-                            <td class="info-valor">R$ 52,590</td>
+                            <td class="info-valor">52,590</td>
                             <td class="remover">Remover</td>
                         </tr>
                         <tr class="motocicleta">
@@ -101,7 +101,7 @@
                             <td class="info-modelo">CB 650R</td>
                             <td class="info-ano">2020</td>
                             <td class="info-cilindrada">649</td>
-                            <td class="info-valor">R$ 48,000</td>
+                            <td class="info-valor">48,000</td>
                             <td class="remover">Remover</td>
                         </tr>
                         <tr class="motocicleta">
@@ -109,7 +109,7 @@
                             <td class="info-modelo">Z900</td>
                             <td class="info-ano">2017</td>
                             <td class="info-cilindrada">900</td>
-                            <td class="info-valor">R$ 49,000</td>
+                            <td class="info-valor">49,000</td>
                             <td class="remover">Remover</td>
                         </tr>
                         <tr class="motocicleta">
@@ -117,7 +117,7 @@
                             <td class="info-modelo">Ninja 400</td>
                             <td class="info-ano">2020</td>
                             <td class="info-cilindrada">400</td>
-                            <td class="info-valor">R$ 28,000</td>
+                            <td class="info-valor">28,000</td>
                             <td class="remover">Remover</td>
                         </tr>
                         <tr class="motocicleta">
@@ -125,7 +125,7 @@
                             <td class="info-modelo">Scrambler</td>
                             <td class="info-ano">2018</td>
                             <td class="info-cilindrada">800</td>
-                            <td class="info-valor">R$ 44,600</td>
+                            <td class="info-valor">44,600</td>
                             <td class="remover">remover</td>
                         </tr>
                     </tbody>
@@ -142,5 +142,6 @@
     </footer>
     <script src="./scripts/cadastrar-motocicletas.js"></script>
     <script src="./scripts/remover-dados.js"></script>
+    <script src="./scripts/filtrar.js"></script>
 </body>
 </html>

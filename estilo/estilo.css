@@ -44,7 +44,11 @@ header {
     text-decoration: none;
     color:#DAA520;
     
-    
+}
+
+#logo a {
+    text-decoration: none;
+    color:#DAA520;
 }
 
 #menu ul li a:link {

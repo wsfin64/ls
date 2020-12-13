@@ -1,0 +1,85 @@
+main {
+    
+}
+
+#consulta-tela {
+    width: 1000px;
+    
+    margin: 20px auto;
+    background-color: white;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+    
+
+#tabela {
+    padding: 10px;
+}
+
+#tabela h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+#tabela th, #tabela td {
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    
+}
+
+table {
+    margin: 5px auto;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+td, th {
+    border: 1px solid rgb(88, 88, 88);
+    
+}
+
+th {
+    background-color: #DAA520;
+}
+
+.motocicleta:hover {
+    background-color: #DAA520;
+
+}
+
+#entrada-dados {
+    padding: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+  
+#campo-busca {
+    margin: 15px 60px;
+}
+
+
+fieldset {
+    padding: 20px;
+    
+}
+
+fieldset label {
+    margin-left: 10px;
+}
+
+fieldset p {
+    text-align: center;
+}
+
+#botao-cadastrar {
+    margin: 15px;
+    padding: 10px;
+    background-color: #DAA520;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+}
+
+footer {
+    margin-top: 100px;
+}

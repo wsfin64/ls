@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Motocicletas</title>
+    <link rel="stylesheet" href="./estilo/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilo/consulta.css">
+</head>
+<body>
+    <header>
+        <div class="container-menu">
+            <div id="logo">
+                <!--img id="img-logo" src="./img/lotus_logo.svg" height="80vh"-->
+                <h1>EmpresaX</h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="consulta.html">Consultar</a></li>
+                    <li><a href="cadastro.html">Cadastrar Motocicleta</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="consulta-tela">
+
+            <div id="entrada-dados">
+                <form id="entradas">
+                    <fieldset id="cadastro-moto">
+                        <legend>Informações da Motocicleta</legend>
+                        <label for="cadastro-fabricante">Fabricante:</label>
+                        <select id="cadastro-fabricante" name="fabricante">
+                            <option value="yamaha">Yamaha</option>
+                            <option value="honda">Honda</option>
+                            <option value="bmw">BMW</option>
+                            <option value="triumph">Triumph</option>
+                            <option value="ducati">Ducati</option>
+                            <option value="harley davidson">Harley Davidson</option>
+                            <option value="indian">Indian</option>
+                            <option value="ktm">KTM</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="royal enfield">Royal Enfield</option>
+                            <option value="kawasaki">Kawasaki</option>
+                            <option value="husqvarna">Husqvarna</option>  
+                        </select>
+                        <label for="cadastro-modelo">Modelo:</label>
+                        <input type="text" id="cadastro-modelo" name="modelo" placeholder="Ex:Ninja">
+                        <label for="cadastro-ano">Ano:</label>
+                        <input type="text" id="cadastro-ano" name="ano" size="4" maxlength="4">
+                        <label for="cadastro-cilindrada">Cilindrada:</label>
+                        <input type="text" name="cadastro-cilindrada" id="cilindrada" size="4" maxlength="4">
+                        <label for="cadastro-valor">Valor R$:</label>
+                        <input type="text" name="cadastro-valor" id="valor" size="6" maxlength="6">
+                        <p><button id="botao-cadastrar">Cadastrar</button></p>
+
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <div id="tabela">
+                <h2>Motocicletas cadastradas</h2>
+                <div id="campo-busca">
+                    <label for="busca">Busca:</label>
+                    <input type="text" id="busca" name="busca">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fabricante</th>
+                            <th>Modelo</th>
+                            <th>Ano</th>
+                            <th>Cilindrada</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-motocicletas">
+                        <tr class="motocicleta">
+                            <td class="info-fabricante">Yamaha</td>
+                            <td class="info-modelo">MT-07</td>
+                            <td class="info-ano">2019</td>
+                            <td class="info-cilindrada">691</td>
+                            <td class="info-valor">R$ 29,590</td>
+                        </tr>
+                        <tr class="motocicleta">
+                            <td class="info-fabricante">Triumph</td>
+                            <td class="info-modelo">Street Triple</td>
+                            <td class="info-ano">2018</td>
+                            <td class="info-cilindrada">765</td>
+                            <td class="info-valor">R$ 52,590</td>
+                        </tr>
+                        <tr class="motocicleta">
+                            <td class="info-fabricante">Honda</td>
+                            <td class="info-modelo">CB 650R</td>
+                            <td class="info-ano">2020</td>
+                            <td class="info-cilindrada">649</td>
+                            <td class="info-valor">R$ 48,000</td>
+                        </tr>
+                        <tr class="motocicleta">
+                            <td class="info-fabricante">Kawasaki</td>
+                            <td class="info-modelo">Z900</td>
+                            <td class="info-ano">2017</td>
+                            <td class="info-cilindrada">900</td>
+                            <td class="info-valor">R$ 49,000</td>
+                        </tr>
+                        <tr class="motocicleta">
+                            <td class="info-fabricante">Kawasaki</td>
+                            <td class="info-modelo">Ninja 400</td>
+                            <td class="info-ano">2020</td>
+                            <td class="info-cilindrada">400</td>
+                            <td class="info-valor">R$ 28,000</td>
+                        </tr>
+                        <tr class="motocicleta">
+                            <td class="info-fabricante">Ducati</td>
+                            <td class="info-modelo">Scrambler</td>
+                            <td class="info-ano">2018</td>
+                            <td class="info-cilindrada">800</td>
+                            <td class="info-valor">R$ 44,600</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1>Sigam as nossas redes sociais para novidades</h1>
+            <p>facebook | instagram | youtube</p>
+        </div>
+    </footer>
+    <script src="./scripts/cadastrar-motocicletas.js"></script>
+</body>
+</html>

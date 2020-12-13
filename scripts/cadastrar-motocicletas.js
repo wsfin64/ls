@@ -10,6 +10,7 @@ const botaoCadastrar = document.querySelector('#botao-cadastrar');
         let ano = form.ano.value;
         let cilindrada = form.cilindrada.value;
         let valor = form.valor.value;
+        let remover = 'Remover';
 
         if (fabricante == '' || modelo == '' || ano == '' || cilindrada == '' || valor == ''){
             alert('Por favor, preencha todos os campos!');
@@ -21,10 +22,22 @@ const botaoCadastrar = document.querySelector('#botao-cadastrar');
 
             // Criando elementos TD
             let fabricanteTD = document.createElement('td');
+            fabricanteTD.classList.add('info-fabricante');
+
             let modeloTD = document.createElement('td');
+            modeloTD.classList.add('info-modelo');
+
             let anoTD = document.createElement('td');
+            anoTD.classList.add('info-ano');
+
             let cilindradaTD = document.createElement('td');
+            cilindradaTD.classList.add('info-cilindrada');
+
             let valorTD = document.createElement('td');
+            valorTD.classList.add('info-valor');
+
+            let removerTD = document.createElement('td');
+            removerTD.classList.add('remover');
 
             // Associando os valores de entrada aos tds criados
             fabricanteTD.textContent = fabricante;
@@ -32,6 +45,7 @@ const botaoCadastrar = document.querySelector('#botao-cadastrar');
             anoTD.textContent = ano;
             cilindradaTD.textContent = cilindrada;
             valorTD.textContent = valor;
+            removerTD.textContent = remover;
 
             // Inserindo os TDs criados à TR
             motocicletaTR.appendChild(fabricanteTD);
@@ -39,6 +53,7 @@ const botaoCadastrar = document.querySelector('#botao-cadastrar');
             motocicletaTR.appendChild(anoTD);
             motocicletaTR.appendChild(cilindradaTD);
             motocicletaTR.appendChild(valorTD);
+            motocicletaTR.appendChild(removerTD);
 
             // Adicinando o TR à tabela
             let tabelaMotocicletas = document.querySelector('#tabela-motocicletas');

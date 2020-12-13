@@ -55,7 +55,7 @@ th {
 }
   
 #campo-busca {
-    margin: 15px 60px;
+    margin: 15px 0px;
 }
 
 
@@ -82,4 +82,15 @@ fieldset p {
 
 footer {
     margin-top: 100px;
+}
+
+
+.remover:hover {
+    background-color: red;
+    
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
 }
